@@ -31,7 +31,7 @@ async def progress_for_pyrogram(
     diff = now - start
     if round(diff % 10.00) == 0 or current == total:
         # if round(current / total * 100, 0) % 5 == 0:
-         percentage = current * 100 / total
+        percentage = current * 100 / total
         speed = current / diff
         elapsed_time = round(diff) * 1000
         time_to_completion = round((total - current) / speed) * 1000
@@ -40,17 +40,17 @@ async def progress_for_pyrogram(
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-        progress = "<b>{0}{1}</b>\n<code>Percentage📊: [{2}%]</code>\n".format(
+        progress = "[{0}{1}] \nP: {2}%\n".format(
             ''.join(["◼️" for i in range(math.floor(percentage / 5))]),
             ''.join(["◻️" for i in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2))
-       
+
         tmp = progress + "<code>Uploading⬆️: [{0}]\nSize💾: [{1}]\nSpeed🚀: [{2}/s]\nDetected Network🛰️: [5G]\nTime Left⏳: [{3}]</code>".format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
-            #elapsed_time if elapsed_time != '' else "0 s",
-            #estimated_total_time if estimated_total_time != '' else "0 s"
+            # elapsed_time if elapsed_time != '' else "0 s",
+            estimated_total_time if estimated_total_time != '' else "0 s"
         )
         try:
             await message.edit(
@@ -70,7 +70,7 @@ def humanbytes(size):
         return ""
     power = 2**10
     n = 0
-    Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
+    Dic_powerN = {0: ' ', 1: 'Ki', 2: 'Mi', 3: 'Gi', 4: 'Ti'}
     while size > power:
         size /= power
         n += 1
