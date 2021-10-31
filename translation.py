@@ -1,12 +1,8 @@
 class Translation(object):
      START_TEXT = """<b>Hello!! {},
 🕹I'm URL X Uploader Bot📌!, Made by @MalluBhai
-🎲I can upload URL links as Telegram files, documents or audio.
-🍿Send me any direct download link.
-📵Don't send Youtube links.
-🎯Send Only One Link at a Time.
+🎲I can upload URL links as Telegram files, documents or audio. 🍿Send me any direct download link. 🎯Send Only One Link at a Time.
 😎I can upload to telegram as File or Video or Audio(if supported) format.
-
 /help for more details!</b>"""
     FORMAT_SELECTION = "<b>Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail.</b>"
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
