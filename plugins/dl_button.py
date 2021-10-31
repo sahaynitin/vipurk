@@ -263,7 +263,7 @@ Time Left⏳: {}""".format(
     humanbytes(speed),
     humanbytes(downloaded),
     humanbytes(total_length),
-    TimeFormatter(time_to_completion)
+    TimeFormatter(estimated_total_time)
 )
                         if current_message != display_message:
                             await bot.edit_message_text(
