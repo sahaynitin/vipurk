@@ -1,32 +1,36 @@
 class Translation(object):
-    START_TEXT = """Hi {},
-I'm URL X Uploader Bot📌!
-You can upload HTTP/HTTPS direct link, Using this bot!
+     START_TEXT = """<b>Hello!! {},
+🕹I'm URL X Uploader Bot📌!, Made by @MalluBhai
+🎲I can upload URL links as Telegram files, documents or audio.
+🍿Send me any direct download link.
+📵Don't send Youtube links.
+🎯Send Only One Link at a Time.
+😎I can upload to telegram as File or Video or Audio(if supported) format.
 
-/help for more details!"""
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
+/help for more details</b>"""
+    FORMAT_SELECTION = "<b>🌀Select the desired format: <a href='{}'>File size might be approximate</a> \n\n🖌️If you want to set custom thumbnail.\n🎯Send a photo before or quickly after tapping on any of the below buttons.\n\n🍿You can use /delthumbnail to delete the auto-generated thumbnail.</b>"
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
-    DOWNLOAD_START = "📥Downloading..."
-    UPLOAD_START = "📤Uploading..."
+    DOWNLOAD_START = "<b>📥Downloading Now...</b>"
+    UPLOAD_START = "b>Processing the file...</b>"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks for using @JikURLBot\n\n<b>Join : @FilmClubGroup</b>"
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds.\n\n@JikURLBot"
-    SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
-    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "<b>😎Mission Accomplished</b>"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "<b>🍿Downloaded and Uploaded the file.\n🤠Now Enjoy.\n@JikURLBot</b>"
+    SAVED_CUSTOM_THUMB_NAIL = "<b>🤠Custom thumbnail saved. This image will be used as thumbnail.</b>"
+    DEL_ETED_CUSTOM_THUMB_NAIL = "<b>✅ Custom thumbnail cleared succesfully.</b>"
     CUSTOM_CAPTION_UL_FILE = "{}"
     NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
-    HELP_USER = """How to Use Me? Follow These steps!
+    HELP_USER = """<b>🎯It's very simple to use me.\n🎨Just follow the steps.
     
-1. Send url (example.domain/File.mp4 | New Filename.mp4).
-2. Send Image As Custom Thumbnail (Optional).
-3. Select the button.
-   SVideo - Give File as video with Screenshots
-   DFile  - Give File (video) as file with Screenshots
-   Video  - Give File as video without Screenshots
-   File   - Give File without Screenshots
-
-If bot didn't respond, contact @Sources_Codes"""
+🧁Send url (Link|New Name+Extension).
+🧭Send Custom Thumbnail [Optional]
+🧰Select the desired Button.
+\n🎰SVideo - Give File as video with Screenshots
+🧯DFile - Give File with Screenshots
+🎸Video - Give File as video without Screenshots
+🛰️File - Give File without Screenshots
+\n\n🎲If the Bot didn't respond,
+🌀Contact: @MalluBhai</b>"""
     REPLY_TO_MEDIA_ALBUM_TO_GEN_THUMB = "Reply /generatecustomthumbnail to a media album, to generate custom thumbail"
     ERR_ONLY_TWO_MEDIA_IN_ALBUM = """Media Album should contain only two photos. Please re-send the media album, and then try again, or send only two photos in an album."
 You can use /rename command after receiving file to rename it with custom thumbnail support.
