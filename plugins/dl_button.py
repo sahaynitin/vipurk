@@ -258,6 +258,7 @@ Speed🚀: {}/s
 Downloaded⬇️: {}
 File Size💾: {}
 Time Left⏳: {}""".format(
+    url,                     
     round(percentage),
     humanbytes(speed),
     humanbytes(downloaded),
