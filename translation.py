@@ -7,12 +7,12 @@ class Translation(object):
 🎯Send Only One Link at a Time.
 😎I can upload to telegram as File or Video or Audio(if supported) format.
 
-/help for more details</b>"""
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
+/help for more details!</b>"""
+    FORMAT_SELECTION = "<b>Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail.</b>"
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     DOWNLOAD_START = "<b>📥Downloading Now...</b>"
-    UPLOAD_START = "b>Processing the file...</b>"
+    UPLOAD_START = "<b>Processing the file...</b>"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "<b>😎Mission Accomplished</b>"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "<b>🍿Downloaded and Uploaded the file.\n🤠Now Enjoy.\n@JikURLBot</b>"
