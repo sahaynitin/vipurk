@@ -12,6 +12,6 @@ async def button(bot, update):
 
     cb_data = update.data
     if "|" in cb_data:
-        await youtube_dl_call_back(bot, update)
+        await youtube_dl_call_back(bot, update, message)
     elif "=" in cb_data:
         await ddl_call_back(bot, update)
